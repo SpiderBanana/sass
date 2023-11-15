@@ -1,0 +1,19 @@
+@use '../abstracts/variables';
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px; 
+}
+
+@media (max-width: 768px) {
+
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    
+}

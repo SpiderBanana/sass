@@ -1,0 +1,227 @@
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu li {
+  padding-top: 20px;
+  margin: 0 30px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+  }
+}
+button {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  color: #B2D234;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 30px;
+}
+button:hover {
+  background-color: #ffffff;
+  color: #B2D234;
+}
+
+@media (max-width: 768px) {
+  .button {
+    margin-top: none;
+  }
+}
+.hero {
+  height: 100vh;
+  background-image: url("images/Header back.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.icon-container {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+}
+.icon-container .icon {
+  margin-left: 10px;
+}
+
+.hero-text {
+  font-size: 126px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 0;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-style: medium;
+}
+
+.subtext {
+  color: #ffffff;
+  position: absolute;
+  white-space: nowrap;
+  transform: rotate(-10deg);
+  top: 70%;
+  left: 50%;
+  transform-origin: center;
+  font-size: 54px;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    justify-content: center;
+  }
+  .hero-text {
+    font-size: 3rem;
+  }
+  .subtext {
+    font-size: 1.3rem;
+  }
+}
+.background {
+  height: 100vh;
+  background-image: url("images/ismael-trevino-NDyuR4Huig8-unsplash.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background .center-box {
+  background-color: rgba(178, 210, 52, 0.5);
+  width: 35%;
+  height: 70%;
+  margin-left: 45%;
+  margin-right: 20%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.background .center-box h1, .background .center-box p, .background .center-box btn {
+  color: #ffffff;
+}
+.background .center-box h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 52px;
+}
+.background .center-box p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .background .center-box {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.background-color {
+  height: 100vh;
+  background-image: url("images/louis-hansel-MlPD-AzZYMg-unsplash.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+.box {
+  height: 70%;
+  width: calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.box.green-box {
+  background-color: rgba(178, 210, 52, 0.5);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.box.blue-box {
+  background-color: rgba(96, 160, 216, 0.5);
+  margin-right: 10px;
+}
+.box h1 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 52px;
+  color: #ffffff;
+}
+.box .content {
+  display: flex;
+  justify-content: space-between;
+}
+.box .column {
+  width: 50%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .box {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .box .content {
+    flex-direction: column;
+  }
+  .box .column {
+    width: 100%;
+  }
+}
+.column {
+  list-style-type: none;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  list-style-type: none;
+}
+.column li {
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

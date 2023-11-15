@@ -1,0 +1,115 @@
+@use '../abstracts/variables' as *;
+
+.hero {
+    height: 100vh;
+    background-image: url('images/Header back.png'); 
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+    .icon-container {
+        position: absolute;
+        bottom: 10px; 
+        right: 10px; 
+        display: flex; 
+
+        .icon {
+            margin-left: 10px;
+        }
+    }
+
+
+    .hero-text {
+        font-size: 126px;
+        font-family: $font-poppins;
+        text-align: center;
+        margin: 0;
+        color: $color-white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-style: medium;
+    
+    }
+    
+        .subtext {
+            color: $color-white;; 
+            position: absolute; 
+            white-space: nowrap; 
+            transform: rotate(-10deg); 
+            top: 70%; 
+            left: 50%;
+            transform-origin: center; 
+            font-size: 54px;
+            font-family: $font-poppins;
+            font-style: italic;
+        }
+    
+    @media (max-width: 768px) {
+        .hero {
+            justify-content: center;
+        }
+
+            .hero-text {
+                font-size: 3rem;
+            }
+
+            .subtext {
+                font-size: 1.3rem;
+            }
+    }
+
+
+.background {
+    height: 100vh;
+    background-image: url('images/ismael-trevino-NDyuR4Huig8-unsplash.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .center-box {
+        background-color: $color-green-transparent;
+        width: 35%; 
+        height: 70%; 
+        margin-left: 45%; 
+        margin-right: 20%; 
+        padding: 20px;
+        box-sizing: border-box; 
+        text-align: center;
+    
+    
+        h1, p, btn {
+            color: $color-white;
+        }
+        h1{
+            font-family: $font-poppins;
+            font-size: 52px;
+        }
+        p{
+            font-family: $font-poppins;
+            font-size: 18px;
+        }
+        
+        @media (max-width: 768px) { 
+            width: auto; 
+            height: auto;
+            margin: 0; 
+            padding: 20px;
+            text-align: center;
+        }
+    }
+}
+    
+.background-color {
+    height: 100vh;
+    background-image: url('images/louis-hansel-MlPD-AzZYMg-unsplash.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

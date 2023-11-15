@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as *;
+
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    padding-top: 20px;
+    margin: 0 30px;
+    color: $color-white;
+    font-family: $font-poppins;
+    font-size: 18px;
+   
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+}
