@@ -1,0 +1,46 @@
+@use '../abstracts/variables' as *;
+
+.menu {
+    list-style: none;
+    display: flex;
+
+    li {
+        padding-top: 20px;
+        margin: 0 50px;
+        color: $color-white;
+        font-family: $font-poppins;
+        font-size: 18px;
+    }
+
+    &.menu-item--home {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 15%; // pour centrer la barre
+            bottom: -10px; // pour créer un espace de 10px
+            width: 70%; // pour faire la barre de 70% de la largeur du texte
+            height: 2px; // pour définir l'épaisseur de la barre
+            background-color: currentColor; // pour faire la barre de la même couleur que le texte
+        }
+
+        @media (max-width: 1285px) {
+            &::after {
+                left: 0%;
+            }
+        }
+    }
+
+    @media (max-width: 1285px) {
+        flex-direction: column;
+    }
+}
+
+.logo {
+    @media (max-width: 660px) {
+        img {
+            width: 125px; 
+        }
+    }
+}

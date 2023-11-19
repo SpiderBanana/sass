@@ -1,0 +1,49 @@
+@use '../abstracts/variables' as *;
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; // Aligner le contenu à gauche
+    padding-left: 20px; // Ajouter un peu d'espace à gauche
+    padding-right: 80px; // Ajouter un peu d'espace à droite
+
+    h1 {
+        font-family: $font-poppins;
+        font-size: 48px;
+        color: $color-green;
+    }
+
+    p {
+        font-family: $font-poppins;
+        font-size: 18px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        label, input, textarea {
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        label {
+            font-family: $font-poppins;
+            font-size: 23px;
+            font-style: italic;
+            color: $color-green;
+        }
+    }
+
+    .form-group {
+        display: flex;
+        justify-content: space-between;
+
+        label, input {
+            margin: 5px;
+            flex-basis: 48%;
+        }
+    }
+}
